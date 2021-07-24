@@ -1,6 +1,5 @@
 import React from 'react';
-import ControlView from '../ControlsView';
-import PresetPanelView from '../PresetPanelView';
+import ControlPanelView from '../ControlsView';
 import RulesView from '../RulesView/index';
 import CanvasView from '../Canvas';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -20,18 +19,14 @@ const BoardGameView = ({
   speed,
 }) => {
   return (
-    <Container fluid className='justify-content-center boardgame'>
-      <Row>
+    <Container className='boardgame'>
+      {/* <Row className='rules'>
         <Col>
           <RulesView />
         </Col>
-      </Row>
-      {/* <Row>
-        <Col>
-          <PresetPanelView handlePresets={handlePresets} gen={gen} />
-        </Col>
       </Row> */}
-      <Row className='controls-and-game'>
+
+      <Row className='game'>
         <Col>
           <CanvasView
             canvasRef={canvasRef}
@@ -41,17 +36,15 @@ const BoardGameView = ({
           />
         </Col>
       </Row>
-      <Row>
-        <Col className='controls'>
-          <ControlView
+      <Row className=' panel'>
+        <Col>
+          <ControlPanelView
+            gen={gen}
             stop={stopGame}
             start={startGame}
             clear={clearBoard}
-            gen={gen}
+            handlePresets={handlePresets}
           />
-        </Col>
-        <Col>
-          <PresetPanelView handlePresets={handlePresets} gen={gen} />
         </Col>
       </Row>
     </Container>
