@@ -1,58 +1,56 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-
+import {
+  Card,
+  CardSubtitle,
+  CardTitle,
+  CardText,
+  Row,
+  Col,
+  List,
+} from 'reactstrap';
 const RulesView = () => {
   return (
-    <Container fluid className='d-flex justify-content-center rules'>
+    <div className=' rules'>
       <Row>
-        <Col className='about-section'>
-          <h2> About </h2>
-          <p className='about'>
-            The Game of Life originally created by John Conway is an infinite,
-            two-dimenstional grid of cells, each of shich can only exist in one
-            of two states, "Alive" or "Dead." Every cell interactcs with its
-            neighbor, (the 8 cells immediatly sourounding the cell ).
-          </p>
-          <p className='about'>
-            Can you keep your generations ticking? Try your own pattern on the
-            board following the rules.
-          </p>
-          <p className='about'>Yeah really, thats it!</p>
+        <Col sm='6'>
+          <Card body className='about-section'>
+            <CardTitle tag='h2'> About </CardTitle>
+            <CardText>
+              The Game of Life originally created by John Conway is an infinite,
+              two-dimenstional grid of cells, each of shich can only exist in
+              one of two states, "Alive" or "Dead." Every cell interactcs with
+              its neighbor, (the 8 cells immediatly sourounding the cell ).
+            </CardText>
+            <CardText>
+              Can you keep your generations ticking? Try your own pattern on the
+              board following the rules.
+            </CardText>
+          </Card>
         </Col>
-        <Col className='rules-section'>
-          <h4> The Rules! </h4>
-          <p>With each "Birth or Death" the following happens:</p>
-          <Row>
-            <Col>
-              <h6>When a cell is Dead it will be "Born"</h6>
+        <Col sm='6'>
+          <Card body className='rules-section'>
+            <CardTitle tag='h2'> The Rules! </CardTitle>
 
+            <CardText>
+              With each "Birth or Death" the following happens:
+            </CardText>
+
+            <h6>When a cell is Dead it will be "Born"</h6>
+            <List type='unstyled'>
               <ul>
                 <li>If the cell has exactly three neighbors</li>
               </ul>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
+
               <h6>When a cell is "Alive" it will "DIE"</h6>
               <ul>
                 <li>If the cell has more then 3 neighbors.</li>
                 <li>If the cell has less then 2 neighbors</li>
               </ul>
-            </Col>
-          </Row>
+            </List>
+          </Card>
         </Col>
       </Row>
-
-      {/* <Row>
-        <Col>
-          <p>
-            Can you keep your generations ticking? Try your own pattern on the
-            board following the rules.
-          </p>
-          <p>Yeah really, thats it!</p>
-        </Col>
-      </Row> */}
-    </Container>
+    </div>
   );
 };
 

@@ -1,81 +1,81 @@
-import React from 'react';
-import { Container, Row, Col, DropdownButton, Dropdown } from 'react-bootstrap';
+import React, { useState } from 'react';
+import {
+  ButtonDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+} from 'reactstrap';
 
 // TODO: Plug this into canvas maybe to align with canvas
 
 const PresetView = (props) => {
+  const [dropdownOpen, setOpen] = useState(false);
+  const toggle = () => setOpen(!dropdownOpen);
   return (
-    <Container className='presets'>
-      <Row className='d-flex justify-content-center'>
-        {/* <Col>
-          <h4>Generation: {props.gen}</h4>
-        </Col> */}
+    <ButtonDropdown isOpen={dropdownOpen} toggle={toggle}>
+      <DropdownToggle caret>Presets</DropdownToggle>
+      <DropdownMenu>
+        <DropdownItem
+          as='button'
+          className='preset-button'
+          onClick={props.handlePresets}
+          value='thunderbird'
+        >
+          {' '}
+          Thunderbird
+        </DropdownItem>
 
-        <Col>
-          <DropdownButton id='preset-dropdown' title='Choose a Preset'>
-            <Dropdown.Item
-              as='button'
-              className='preset-button'
-              onClick={props.handlePresets}
-              value='thunderbird'
-            >
-              {' '}
-              Thunderbird
-            </Dropdown.Item>
+        <DropdownItem
+          as='button'
+          className='preset-button'
+          onClick={props.handlePresets}
+          value='quad_thunderbird'
+        >
+          {' '}
+          Quad Thunderbird
+        </DropdownItem>
 
-            <Dropdown.Item
-              as='button'
-              className='preset-button'
-              onClick={props.handlePresets}
-              value='quad_thunderbird'
-            >
-              {' '}
-              Quad Thunderbird
-            </Dropdown.Item>
+        <DropdownItem
+          as='button'
+          className='preset-button'
+          onClick={props.handlePresets}
+          value='infinite'
+        >
+          {' '}
+          Infinite
+        </DropdownItem>
 
-            <Dropdown.Item
-              as='button'
-              className='preset-button'
-              onClick={props.handlePresets}
-              value='infinite'
-            >
-              {' '}
-              Infinite
-            </Dropdown.Item>
+        <DropdownItem
+          as='button'
+          className='preset-button'
+          onClick={props.handlePresets}
+          value='gospers_glider_gun'
+        >
+          {' '}
+          Gospers Glider Gun
+        </DropdownItem>
 
-            <Dropdown.Item
-              as='button'
-              className='preset-button'
-              onClick={props.handlePresets}
-              value='gospers_glider_gun'
-            >
-              {' '}
-              Gospers Glider Gun
-            </Dropdown.Item>
+        <DropdownItem
+          as='button'
+          className='preset-button'
+          onClick={props.handlePresets}
+          value='mash_up'
+        >
+          {' '}
+          Mash Up
+        </DropdownItem>
 
-            <Dropdown.Item
-              as='button'
-              className='preset-button'
-              onClick={props.handlePresets}
-              value='mash_up'
-            >
-              {' '}
-              Mash Up
-            </Dropdown.Item>
-
-            <Dropdown.Item
-              as='button'
-              className='preset-button'
-              onClick={props.handlePresets}
-              value='random'
-            >
-              {' '}
-              Random
-            </Dropdown.Item>
-          </DropdownButton>
-        </Col>
-      </Row>
-    </Container>
+        <DropdownItem
+          as='button'
+          className='preset-button'
+          onClick={props.handlePresets}
+          value='random'
+        >
+          {' '}
+          Random
+        </DropdownItem>
+      </DropdownMenu>
+    </ButtonDropdown>
   );
 };
 
