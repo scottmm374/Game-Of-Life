@@ -1,17 +1,9 @@
 import React from 'react';
-import {
-  Card,
-  CardSubtitle,
-  CardTitle,
-  CardText,
-  Row,
-  Col,
-  List,
-} from 'reactstrap';
+import { Card, CardTitle, CardText, Row, Col, List } from 'reactstrap';
 const RulesView = () => {
   return (
-    <div className=' rules'>
-      <Row>
+    <>
+      <Row className='rules'>
         <Col sm='6'>
           <Card body className='about-section'>
             <CardTitle tag='h2'> About </CardTitle>
@@ -50,7 +42,7 @@ const RulesView = () => {
           </Card>
         </Col>
       </Row>
-    </div>
+    </>
   );
 };
 

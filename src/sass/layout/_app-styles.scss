@@ -1,18 +1,20 @@
 @use '../utils/variables' as v;
 @use '../utils/mixins' as m;
 
-.App {
-  background-color: v.$black;
-  color: v.$bright-pink;
-}
-
 * {
   box-sizing: border-box;
 }
 
+html,
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  height: auto;
+}
+.App {
+  background-color: v.$black;
+  color: v.$bright-pink;
 }
 
 // .container {

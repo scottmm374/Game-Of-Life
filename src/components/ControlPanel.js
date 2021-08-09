@@ -97,8 +97,6 @@ function ControlPanel() {
 
   return (
     <div className='boardgame-component-control-panel'>
-      {/* <Row>
-        <Col> */}
       <BoardGameView
         canvasRef={canvasRef}
         width={width}
@@ -113,8 +111,6 @@ function ControlPanel() {
         gen={gen}
         speed={speed}
       />
-      {/* </Col>
-      </Row> */}
     </div>
   );
 }

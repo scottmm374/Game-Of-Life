@@ -1,12 +1,18 @@
 import React from 'react';
 
-const CanvasView = ({ canvasRef, width, height, onClick }) => {
+const CanvasView = ({ canvasRef, width, height, onClick, gen }) => {
   return (
-    <div className='canvasview'>
-      <h4>"Generation: "Gebrations here"</h4>
+    <>
+      <h4>"Generation: {gen}</h4>
 
-      <canvas ref={canvasRef} width={width} height={height} onClick={onClick} />
-    </div>
+      <canvas
+        // className='canvasview'
+        ref={canvasRef}
+        width={width}
+        height={height}
+        onClick={onClick}
+      />
+    </>
   );
 };
 export default CanvasView;

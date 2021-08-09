@@ -3,64 +3,32 @@
 
 .rules {
   color: v.$background;
+}
 
-  border-bottom: 3px ridge v.$bright-orange;
+.about-section {
+  background-color: v.$black;
+}
 
-  h6 {
-    color: v.$bright-pink;
-    // font-size: 25px;
-    // text-decoration: underline;
-  }
+h6 {
+  color: v.$bright-pink;
+}
 
-  h2 {
-    color: v.$bright-orange;
-    // font-size: 40px;
-    text-align: left;
-    margin-bottom: 25px;
-    padding-left: 120px;
-  }
+h2 {
+  color: v.$bright-orange;
+}
 
-  h4 {
-    color: v.$bright-orange;
-    font-size: 30px;
-    text-align: left;
-    margin-bottom: 45px;
-  }
+h4 {
+  color: v.$bright-orange;
+}
 
-  p {
-    color: v.$bright-blue;
-    font-size: 18px;
-    text-align: left;
-    // padding: 10px 120px;
-  }
+p {
+  color: v.$bright-blue;
+}
 
-  .about {
-    color: v.$bright-blue;
-    font-size: 18px;
-    // text-align: left;
-    padding: 10px 120px;
-  }
+.about {
+  color: v.$bright-blue;
+}
 
-  li {
-    color: v.$bright-pink;
-    font-size: 15px;
-    // padding: 10px 0px;
-  }
-
-  text-align: left;
-  padding: 5%;
-
-  .rules-section {
-    margin-left: 70px;
-  }
-
-  .about-section {
-    // border-right: 1px solid v.$bright-pink;
-  }
-
-  // .rule-card {
-  //   @include m.btn-shadow($color: v.$bright-pink);
-  //   // @include m.borders($size: 1px, $type: solid, $color: v.$bright-pink);
-  //   padding-top: 20px;
-  // }
+li {
+  color: v.$bright-pink;
 }

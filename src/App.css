@@ -1,4 +1,4 @@
-.App {
+/* .App {
   background-color: #302e2e;
   font-family: 'Fira Code', monospace;
   color: #e03c8a;
@@ -24,7 +24,7 @@ h6 {
 
 li {
   margin-left: 50px;
-}
+} */
 /* .rules-header {
   margin-bottom: 40px;
   margin-left: 60px;
@@ -58,13 +58,13 @@ footer a:hover {
   color: #e03c8a;
 } */
 
-#header-img {
+/* #header-img {
   margin-bottom: 30px;
   width: 40%;
   /* box-shadow: 4px 4px 30px #e67212; */
-  box-shadow: 6px 11px 14px #e67212b5;
-}
-
+/* box-shadow: 6px 11px 14px #e67212b5; */
+/* }  */
+/* 
 header {
   margin-bottom: 30px;
   background-color: #0000007a;
@@ -82,9 +82,9 @@ button {
   color: #e03c8a;
   border: 1px solid #e03c8a;
   box-shadow: 5px 4px 9px #e03c8a;
-}
+} */
 
-button:hover {
+/* button:hover {
   color: #e67212;
   border: 1px solid #e67212;
   background-color: #313131;
@@ -97,9 +97,9 @@ button:hover {
   margin-left: 160px;
   width: 80%;
   direction: rtl;
-}
+} */
 
-.preset-button {
+/* .preset-button {
   margin-bottom: 30px;
   width: 200px;
   height: 37px;
@@ -114,9 +114,9 @@ button:hover {
   background-color: #313131;
 
   box-shadow: 5px 4px 9px #e03c8a;
-}
+} */
 
-.control-buttons {
+/* .control-buttons {
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -128,14 +128,14 @@ button:hover {
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
+} */
 /* .rules {
   display: flex;
   flex-direction: column;
   padding-top: 5rem;
   margin-left: 45;
 } */
-.presets {
+/* .presets {
   margin-left: 30px;
   display: flex;
   flex-direction: column;
@@ -144,13 +144,13 @@ button:hover {
 .preset-title {
   margin-left: 93px;
   margin-top: 5.25rem;
-}
+} */
 
 /* .rules-subtitle {
   margin-left: 60px;
   margin-bottom: 15px;
 } */
-.preset-button-container {
+/* .preset-button-container {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
@@ -171,4 +171,4 @@ button:hover {
   .canvas {
     max-width: 50%;
   }
-}
+} */
