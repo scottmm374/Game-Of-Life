@@ -1,0 +1,165 @@
+/*
+file name: App.scss
+comment: refactor of App.css
+*/
+
+$background-color: #000;
+$font-primary: #e03c8a;
+$font-secondary: #e67212;
+
+$font-family: "Fira Code", monospace;
+
+:root {
+  --bg-color: $background-color;
+  --font-color--main: $font-primary;
+  --font-color--secondary: $font-secondary;
+}
+
+.App {
+  background-color: var(--bg-color);
+  font-family: "Fira Code", monospace;
+  color: var(--font-color--main);
+  width: 100%;
+  height: auto;
+}
+main {
+  min-height: 80vh;
+  background-color: var(--bg-color);
+}
+
+h5 {
+  color: var(--font-color--secondary);
+}
+
+li {
+  /* margin-left: 5%; */
+  color: var(--font-color--secondary);
+  font-size: 1.25rem;
+  line-height: 35px;
+}
+
+header {
+  background-color: var(--bg-color);
+  color: #2590da;
+  /* box-shadow: 1px 6px 30px var(--font-color--main);
+    border-bottom: solid 2px var(--font-color--main); */
+  padding: 1.5%;
+  /* text-align: center; */
+  /* width: 100%; */
+}
+
+canvas {
+  /* margin-top: 10%; */
+  /* margin-bottom: 10%; */
+  /* border: 2px solid var(--font-color--secondary); */
+  /* box-shadow: 5px 4px 15px #e671128d; */
+  /* border-radius: 5px; */
+  width: 100%;
+  /* border: 1px dashed yellow; */
+}
+
+.fa-linkedin-in,
+.fa-github-alt,
+.fa-envelope,
+.fa-circle-play,
+.fa-circle-pause,
+.fa-arrows-rotate {
+  font-size: 3em;
+  color: var(--font-color--main);
+  padding: 1em;
+}
+
+.fa-linkedin-in:hover,
+.fa-github-alt:hover,
+.fa-envelope:hover,
+.fa-circle-play:hover,
+.fa-circle-pause:hover,
+.fa-arrows-rotate:hover {
+  color: var(--font-color--secondary);
+}
+
+footer {
+  background-color: var(--bg-color);
+  color: var(--font-color--main);
+  padding-bottom: 3%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+footer a {
+  font-size: 2rem;
+  color: var(--font-color--secondary);
+}
+
+footer a:hover {
+  color: var(--font-color--main);
+}
+
+/* .control-button {
+    font-size: 1em;
+    width: 10em;
+    height: auto; */
+/* padding: 3%;
+    margin-top: 10%;
+    margin-right: 2%; */
+
+/* background-color: #1b1919e8; */
+/* color: var(--font-color--main);
+    border: 1px solid var(--font-color--main);
+  } */
+
+/* .control-button:hover {
+    color: var(--font-color--secondary);
+    border: 1px solid var(--font-color--secondary);
+    box-shadow: 5px 4px 9px var(--font-color--secondary);
+  } */
+
+.preset-button {
+  margin-top: 10%;
+  margin-right: 2%;
+  margin-bottom: 3%;
+  font-size: 1em;
+  width: 10em;
+  height: auto;
+  background-color: #1b1919e8;
+  color: var(--font-color--secondary);
+  border: 1px solid var(--font-color--secondary);
+  /* box-shadow: 5px 4px 9px var(--font-color--secondary); */
+}
+.preset-button:hover {
+  color: var(--font-color--main);
+  border: 1px solid var(--font-color--main);
+  box-shadow: 5px 4px 9px var(--font-color--main);
+}
+
+.titles-preset-rules {
+  color: var(--font-color--main);
+  font-size: 2.5rem;
+  /* margin-bottom: 5%; */
+  /* margin-top: 10%; */
+}
+
+.death-birth {
+  color: #2590da;
+  font-size: 1.5rem;
+  /* margin-bottom: 1.5%; */
+}
+
+.gen {
+  /* margin-top: 15%; */
+  /* text-align: left; */
+  font-size: 2em;
+  color: var(--font-color--secondary);
+  text-decoration-line: underline;
+}
+
+/* .board { */
+/* text-align: center; */
+/* margin-top: 10%; */
+/* margin-bottom: 5%; */
+/* } */
+
+/* .right-side { */
+/* margin-top: 2%; */
+/* margin-bottom: 10%; */
+/* } */
